@@ -1,0 +1,677 @@
+<!-- 
+
+   ⭕ NAME OF PROJECT : Chain
+
+   ⭕ SOURCE OF TEMPLATE : https://templatemo.com/
+
+   ⭕ NAME OF DEVELOPER: JOEL GBEMISOLA.
+
+   ⭕ PROJECT STARTED ON: WED. 17TH NOVEMBER, 2021.
+
+   ⭕ PROJECT ENDED ON : MON. 22ND NOVEMBER, 2021.
+
+   ⭕ NOTES : ©️  all rights reserved. no copy of this code should be re-copied, uploaded or shared without the developer's consent. do upvote code and drop your comments on what you think about it. your feedbacks are my joy. thanks for sticking around 😉
+
+ -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scaleable=1">
+     <meta http-equiv="X-UA-Compatible" content="IE=7">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="styles.css">
+     <script src="https://kit.fontawesome.com/a77c53419e.js" crossorigin="anonymous"></script>
+     <title>Chain App Dev 📱 </title>
+ </head>
+ <body>
+ 
+     <!-- CONTAINER FOR HEADER BACKGROUND IMAGE -->
+ 
+     <main id="header-and-navigation">
+         
+         <!-- HEADER AND NAVIGATION -->
+ 
+         <header id="header">
+ 
+             <div class="header-inner width flex-layout">
+ 
+                 <div class="logo">
+                     <img src="https://i.postimg.cc/JnpYdKct/logo.png" alt="logo">
+                     <label for="dropdown" class="bars-container flex-layout">
+                         <span class="bars"></span>
+                     </label>
+                 </div>
+ 
+                 <nav>
+                     <input type="checkbox" name="dropdown" id="dropdown">
+                     
+                     <ul class="flex-layout">
+                         <li class="home"><a class="first-a" target="_blank" href="#home">home</a></li>
+                         <li class="services"><a target="_blank" href="#services">services</a></li>
+                         <li class="about"><a target="_blank" href="#about">about</a></li>
+                         <li class="pricing"><a target="_blank" href="#pricing">pricing</a></li>
+                         <li class="newsletter"><a target="_blank" href="#newsletter">newsletter</a></li>
+                         <li>
+                             <label for="openModal">sign in now</label>
+                         </li>
+                     </ul>
+                 </nav>
+                 
+             </div>
+ 
+         </header>
+ 
+         <!-- END OF HEADER -->
+ 
+         <!-- MODAL -->
+ 
+         <input type="checkbox" name="openModal" id="openModal">
+ 
+         <aside id="modal">
+ 
+             <div class="modal-container">
+ 
+                 <input type="radio" name="open-each-modal" id="open-each-modal-01" checked>
+                 <input type="radio" name="open-each-modal" id="open-each-modal-02">
+                 <input type="radio" name="open-each-modal" id="open-each-modal-03">
+ 
+                 <div class="modal initial-modal">
+                     <div class="modal-head">login <label for="openModal" class="close-modal close"><i class="fas fa-times"></i></label></div>
+                     <div class="modal-body">
+                         <div class="connect flex-layout facebook"><i class="fab fa-facebook-f"></i><span class="connect-text">Connect with Facebook</span></div>
+                         <div class="connect flex-layout google"><i class="fab fa-google"></i><span class="connect-text">Connect with Google</span></div>
+                         <div class="email">Or Use Your Email Address</div>
+                         <div class="modal-buttons flex-layout">
+                             <label for="open-each-modal-02">login</label>
+                             <label for="open-each-modal-03">sign up</label>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <div class="modal login-modal">
+                     <div class="modal-head">login <label for="openModal" class="close-modal close"><i class="fas fa-times"></i></label></div>
+                     <div class="modal-body">
+                         <form>
+                             <p class="input-label">Email / Username</p>
+                             <input type="text" required>
+                             <p class="input-label">Password</p>
+                             <input type="password" required>
+                             <label class="check flex-layout"><span class="checkbox-label">Remember me on this computer</span>
+                                 <input type="checkbox">
+                                 <span class="checkmark"></span>
+                             </label>
+                             <div class="modal-buttons flex-layout">
+                                 <label for="open-each-modal-01">back</label>
+                                 <label for="">login</label>
+                             </div>
+                             <a target="_blank" href="" class="forgot-password">forgot password?</a>
+                         </form>
+                     </div>
+                 </div>
+ 
+                 <div class="modal sign-up-modal">
+                     <div class="modal-head">register <label for="openModal" class="close-modal close"><i class="fas fa-times"></i></label></div>
+                     <div class="modal-body">
+                         <form>
+                             <p class="input-label">Full Name</p>
+                             <input type="text" required>
+                             <p class="input-label">Email Address</p>
+                             <input type="email" required>
+                             <p class="input-label">Password</p>
+                             <input type="password" required>
+                             <label class="check flex-layout"><span class="checkbox-label">Send me occasional email updates</span>
+                                 <input type="checkbox">
+                                 <span class="checkmark"></span>
+                             </label>
+                             <div class="modal-buttons flex-layout">
+                                 <label for="open-each-modal-01">back</label>
+                                 <label for="">register</label>
+                             </div>
+                         </form>
+                     </div>
+                 </div>
+ 
+             </div>
+ 
+         </aside>
+ 
+         <!-- END OF  MODAL -->
+ 
+         <!-- HOME SECTION -->
+ 
+         <section id="home">
+ 
+             <div class="grid-layout home-inner">
+ 
+                 <div class="left span-6">
+                     <h2>Get The Latest App From App Stores</h2>
+                     <p>Chain App Dev is an app landing page HTML5 template based on Bootstrap v5.1.3 CSS layout provided by TemplateMo, a great website to download free CSS templates.</p>
+                     <div class="buttons">
+                         <button>free quote</button>
+                         <button>free quote</button>
+                     </div>
+                 </div>
+ 
+                 <div class="right span-6">
+                     <img src="https://i.postimg.cc/Rq5YchLT/slider-dec.png" alt="slider-dec">
+                 </div>
+ 
+             </div>
+ 
+         </section>
+ 
+         <!-- END OF HOME SECTION -->
+ 
+     </main>
+ 
+ 
+     <!-- SERVICES SECTION -->
+ 
+     <section id="services">
+ 
+         <div class="centered-text-container">
+             <!-- background image -->
+             <img src="https://i.postimg.cc/4Npfjhqs/services-right-dec.png" alt="services-right-dec">
+ 
+             <div class="centered-text">
+                 <h3>Amazing <span class="dark-blue">Services & Features</span> For You</h3>
+                 <div class="lines flex-layout">
+                     <div class="line line-1"></div>
+                     <div class="line line-2"></div>
+                 </div>
+                 <div class="text">If you need the greatest collection of HTML templates for your business, please visit <a target="_blank" href="https://www.toocss.com/" class="light-blue">TooCSS</a> Blog. If you need to have a contact form PHP script, go to <a target="_blank" href="https://templatemo.com/contact" class="light-blue">our contact page</a> for more information.</div>
+             </div>
+ 
+         </div>
+ 
+         <div class="flex-layout features width">
+ 
+             <div class="each-feature">
+                 <div class="icon icon-01"></div>
+                 <h4>App Maintenance</h4>
+                 <div class="text">You are not allowed to redistribute this template ZIP file on any other website.</div>
+                 <a target="_blank" href="">read more</a>
+             </div>
+ 
+             <div class="each-feature">
+                 <div class="icon icon-02"></div>
+                 <h4>Rocket Speed of App</h4>
+                 <div class="text">You are allowed to use the Chain App Dev HTML template. Feel free to modify or edit this layout.</div>
+                 <a target="_blank" href="">read more</a>
+             </div>
+ 
+             <div class="each-feature">
+                 <div class="icon icon-03"></div>
+                 <h4>Multi Workflow Idea</h4>
+                 <div class="text">If this template is beneficial for your work, please support us <a target="_blank" href="https://paypal.me/templatemo" class="light-blue">a little via PayPal</a>. Thank you.</div>
+                 <a target="_blank" href="">read more</a>
+             </div>
+ 
+             <div class="each-feature">
+                 <div class="icon icon-04"></div>
+                 <h4>24/7 Help & Support</h4>
+                 <div class="text">Lorem ipsum dolor consectetur adipiscing elit sedder williamsburg photo booth quinoa and fashion axe.</div>
+                 <a target="_blank" href="">read more</a>
+             </div>
+ 
+         </div>
+ 
+     </section>
+ 
+     <!-- END OF SERVICES SECTION -->
+ 
+     <!-- ABOUT SECTION -->
+ 
+     <section id="about">
+         <!-- background image -->
+         <img src="https://i.postimg.cc/wT70gHb8/about-bg.jpg" alt="about-bg">
+ 
+         <div class="grid-layout width about-inner">
+ 
+             <div class="left span-6">
+ 
+                 <div class="about-head">
+                     <h3>About <span class="dark-blue">What We Do</span> & Who We Are</h3>
+                     <div class="lines flex-layout">
+                         <div class="line line-1"></div>
+                         <div class="line line-2"></div>
+                     </div>
+                     <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor incididunt ut labore et dolore magna.</div>
+                 </div>
+ 
+                 <div class="grid-layout about-body">
+                     <div class="left-content span-6">
+                         <div class="each-about-detail">
+                             <h4>Maintance Problems</h4>
+                             <div class="text">Lorem Ipsum Text</div>
+                         </div>
+                         <div class="each-about-detail">
+                             <h4>24/7 Support & Help</h4>
+                             <div class="text">Lorem Ipsum Text</div>
+                         </div>
+                     </div>
+                     
+                     <div class="right-content span-6">
+                         <div class="each-about-detail">
+                             <h4>Fixing Issues About</h4>
+                             <div class="text">Lorem Ipsum Text</div>
+                         </div>
+                         <div class="each-about-detail">
+                             <h4>Co. Development</h4>
+                             <div class="text">Lorem Ipsum Text</div>
+                         </div>
+                     </div>
+ 
+                 </div>
+ 
+                 <div class="about-footer">
+                     <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor idunte ut labore et dolore adipiscing magna.</div>
+                     <button>start 14-day free trial</button>
+                     <p>*No Credit Card Required</p>
+                 </div>
+ 
+ 
+             </div>
+ 
+             <div class="right span-6">
+                 <img src="https://i.postimg.cc/SKTcBP30/about-right-dec.png" alt="about-right-dec">
+             </div>
+ 
+         </div>
+ 
+     </section>
+ 
+     <!-- END OF ABOUT SECTION -->
+ 
+     <!-- REVIEWS -->
+ 
+     <aside id="reviews" class="width">
+ 
+         <div class="centered-text">
+             <h3>Check What <span class="dark-blue">The Clients Say</span> About Our App Dev</h3>
+             <div class="lines flex-layout">
+                 <div class="line line-1"></div>
+                 <div class="line line-2"></div>
+             </div>
+             <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor incididunt ut labore et dolore magna.</div>
+         </div>
+ 
+         <div class="grid-layout clients">
+             <div class="tab-keys">
+ 
+                 <label for="reviews-tab-01" class="tab-key-details flex-layout">
+                     <div class="name-and-date">
+                         <div class="name">David Martino</div>
+                         <div class="date">30 November 2021</div>
+                     </div>
+                     <div class="industry">Financial Apps</div>
+                     <div class="rating">4.8</div>
+                 </label>
+                 
+                 <label for="reviews-tab-02" class="tab-key-details flex-layout">
+                     <div class="name-and-date">
+                         <div class="name">Jake Harris Nyo</div>
+                         <div class="date">29 November 2021</div>
+                     </div>
+                     <div class="industry">Digital Business</div>
+                     <div class="rating">4.5</div>
+                 </label>
+                 
+                 <label for="reviews-tab-03" class="tab-key-details flex-layout">
+                     <div class="name-and-date">
+                         <div class="name">May Catherina</div>
+                         <div class="date">27 November 2021</div>
+                     </div>
+                     <div class="industry b">Business & Economics</div>
+                     <div class="rating">4.7</div>
+                 </label>
+                 
+                 <label for="reviews-tab-04" class="tab-key-details flex-layout">
+                     <div class="name-and-date">
+                         <div class="name">Random User</div>
+                         <div class="date">24 November 2021</div>
+                     </div>
+                     <div class="industry">New App Ecosystem</div>
+                     <div class="rating">3.9</div>
+                 </label>
+                 
+                 <label for="reviews-tab-05" class="tab-key-details flex-layout">
+                     <div class="name-and-date">
+                         <div class="name">Mark Amber Do</div>
+                         <div class="date">21 November 2021</div>
+                     </div>
+                     <div class="industry">Web Development</div>
+                     <div class="rating">4.3</div>
+                 </label>
+ 
+ 
+             </div>
+ 
+             <div class="tab-content">
+ 
+                 <!-- radio inputs for reviews tabs -->
+ 
+                 <input type="radio" name="reviews-tab" id="reviews-tab-01" checked>
+                 <input type="radio" name="reviews-tab" id="reviews-tab-02">
+                 <input type="radio" name="reviews-tab" id="reviews-tab-03">
+                 <input type="radio" name="reviews-tab" id="reviews-tab-04">
+                 <input type="radio" name="reviews-tab" id="reviews-tab-05">
+ 
+                 <div class="each-tab-content david">
+                     <div class="quote">
+                         <div class="quote-image">
+                             <img src="https://i.postimg.cc/tTdnXmmC/quote.png" alt="quote image">
+                         </div>
+                         <div class="quote-text">“Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</div>
+                     </div>
+                     <div class="developer-details flex-layout">
+                         <div class="developer-image">
+                             <img src="https://i.postimg.cc/rm5F10Sh/client-image.jpg" alt="client image">
+                         </div>
+                         <div class="name-and-position">
+                             <h4>David Martino</h4>
+                             <div class="position">CEO of David Company</div>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <div class="each-tab-content jake">
+                     <div class="quote">
+                         <div class="quote-image">
+                             <img src="https://i.postimg.cc/tTdnXmmC/quote.png" alt="quote image">
+                         </div>
+                         <div class="quote-text">“CTO, Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</div>
+                     </div>
+                     <div class="developer-details flex-layout">
+                         <div class="developer-image">
+                             <img src="https://i.postimg.cc/rm5F10Sh/client-image.jpg" alt="client image">
+                         </div>
+                         <div class="name-and-position">
+                             <h4>Jake H. Nyo</h4>
+                             <div class="position">CTO of Digital Company</div>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <div class="each-tab-content may">
+                     <div class="quote">
+                         <div class="quote-image">
+                             <img src="https://i.postimg.cc/tTdnXmmC/quote.png" alt="quote image">
+                         </div>
+                         <div class="quote-text">“May, Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</div>
+                     </div>
+                     <div class="developer-details flex-layout">
+                         <div class="developer-image">
+                             <img src="https://i.postimg.cc/rm5F10Sh/client-image.jpg" alt="client image">
+                         </div>
+                         <div class="name-and-position">
+                             <h4>May C.</h4>
+                             <div class="position">Founder of Catherina Co.</div>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <div class="each-tab-content user">
+                     <div class="quote">
+                         <div class="quote-image">
+                             <img src="https://i.postimg.cc/tTdnXmmC/quote.png" alt="quote image">
+                         </div>
+                         <div class="quote-text">“Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</div>
+                     </div>
+                     <div class="developer-details flex-layout">
+                         <div class="developer-image">
+                             <img src="https://i.postimg.cc/rm5F10Sh/client-image.jpg" alt="client image">
+                         </div>
+                         <div class="name-and-position">
+                             <h4>Random Staff</h4>
+                             <div class="position">Manager, Digital Company</div>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <div class="each-tab-content mark">
+                     <div class="quote">
+                         <div class="quote-image">
+                             <img src="https://i.postimg.cc/tTdnXmmC/quote.png" alt="quote image">
+                         </div>
+                         <div class="quote-text">“Mark, Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</div>
+                     </div>
+                     <div class="developer-details flex-layout">
+                         <div class="developer-image">
+                             <img src="https://i.postimg.cc/rm5F10Sh/client-image.jpg" alt="client image">
+                         </div> 
+                         <div class="name-and-position">
+                             <h4>Mark Am</h4>
+                             <div class="position">CTO, Amber Do Company</div>
+                         </div>
+                     </div>
+                 </div>
+ 
+             </div>
+         </div>
+     </aside>
+ 
+     <!-- END OF REVIEWS -->
+ 
+     <!-- PRICING SECTION -->
+ 
+     <section id="pricing" class="width">
+ 
+         <div class="centered-text">
+             <h3>We Have The Best Pre-Order <span class="dark-blue">Prices</span> You Can Get</h3>
+             <div class="lines flex-layout">
+                 <div class="line line-1"></div>
+                 <div class="line line-2"></div>
+             </div>
+             <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor incididunt ut labore et dolore magna.</div>
+         </div>
+ 
+         <div class="pricing-plans flex-layout">
+             <div class="each-pricing-plan">
+                 <div class="price">$12</div>
+                 <div class="plan">
+                     <h4>Standard Plan App</h4>
+                     <div class="plan-img">
+                         <img src="https://i.postimg.cc/Xv8spxPx/pricing-table-01.png" alt="pricing-table-01">
+                     </div>
+                     <ul>
+                         <li class="light-blue">Lorem Ipsum Dolores</li>
+                         <li class="light-blue">20 TB of Storage</li>
+                         <li class="light-blue unavailable">Life-time Support</li>
+                         <li class="light-blue unavailable">Premium Add-Ons</li>
+                         <li class="light-blue unavailable">Fastest Network</li>
+                         <li class="light-blue unavailable">More Options</li>
+                     </ul>
+                     <button>purchase this plan now</button>
+                 </div>
+             </div>
+ 
+             <div class="each-pricing-plan special-plan">
+                 <div class="price">$25</div>
+                 <div class="plan">
+                     <h4>Business Plan App</h4>
+                     <div class="plan-img">
+                         <img src="https://i.postimg.cc/Xv8spxPx/pricing-table-01.png" alt="pricing-table-01">
+                     </div>
+                     <ul>
+                         <li class="light-blue">Lorem Ipsum Dolores</li>
+                         <li class="light-blue">20 TB of Storage</li>
+                         <li class="light-blue">Life-time Support</li>
+                         <li class="light-blue">Premium Add-Ons</li>
+                         <li class="light-blue unavailable">Fastest Network</li>
+                         <li class="light-blue unavailable">More Options</li>
+                     </ul>
+                     <button>purchase this plan now</button>
+                 </div>
+             </div>
+ 
+             <div class="each-pricing-plan">
+                 <div class="price">$66</div>
+                 <div class="plan">
+                     <h4>Premium Plan App</h4>
+                     <div class="plan-img">
+                         <img src="https://i.postimg.cc/Xv8spxPx/pricing-table-01.png" alt="pricing-table-01">
+                     </div>
+                     <ul>
+                         <li class="light-blue">Lorem Ipsum Dolores</li>
+                         <li class="light-blue">20 TB of Storage</li>
+                         <li class="light-blue">Life-time Support</li>
+                         <li class="light-blue">Premium Add-Ons</li>
+                         <li class="light-blue">Fastest Network</li>
+                         <li class="light-blue">More Options</li>
+                     </ul>
+                     <button>purchase this plan now</button>
+                 </div>
+             </div>
+ 
+         </div>
+ 
+     </section>
+ 
+     <!-- END OF PRICING SECTION -->
+ 
+     <!-- NEWSLETTER AND FOOTER SECTION -->
+ 
+     <main id="newsletter-and-footer">
+
+        <!-- background image -->
+         <img src="https://i.postimg.cc/Vk38Kss2/footer-bg.png" alt="footer-bg">
+         <!-- newsletter -->
+ 
+         <section id="newsletter" class="width">
+             <div class="centered-text">
+                 <h3>Join Our Mailing List To Receive The News & Latest Trends</h3>
+                 <form class="flex-layout">
+                     <input type="email" placeholder="Email Address..." required>
+                     <button>suscribe now</button>
+                 </form>
+             </div>
+ 
+             <!-- end of newsletter -->
+ 
+             <!-- sub footer -->
+ 
+             <div class="sub-footer">
+ 
+                 <div class="flex-layout columns-parent">
+ 
+                     <div class="column contact">
+                         <h4>Contact Us</h4>
+                         <div class="text">Rio de Janeiro - RJ, 22795-008, Brazil</div>
+                         <div class="text">10-020-0340</div>
+                         <div class="text">info@company.co</div>
+                     </div>
+ 
+                     <div class="column about ul-parent">
+                         <h4>About Us</h4>
+                         <div class="grid-layout">
+                             <ul class="span-6">
+                                 <li>home</li>
+                                 <li>services</li>
+                                 <li>about</li>
+                                 <li>testimonials</li>
+                                 <li>pricing</li>
+                             </ul>
+                             <ul class="span-6">
+                                 <li>about</li>
+                                 <li>testimonials</li>
+                                 <li>pricing</li>
+                             </ul>
+                         </div>
+                     </div>
+ 
+                     <div class="column links ul-parent">
+                         <h4>Useful Links</h4>
+                         <div class="grid-layout">
+                             <ul class="span-6">
+                                 <li>free apps</li>
+                                 <li>app engine</li>
+                                 <li>programming</li>
+                                 <li>development</li>
+                                 <li>app news</li>
+                             </ul>
+                             <ul class="span-6">
+                                 <li>app dev team</li>
+                                 <li>digital web</li>
+                                 <li>normal apps</li>
+                             </ul>
+                         </div>
+                     </div>
+ 
+                     <div class="column about">
+                         <h4>About Our Company</h4>
+                         <div class="white-logo">
+                             <img src="https://i.postimg.cc/MHj4MVVT/white-logo.png" alt="white-logo">
+                         </div>
+                         <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
+                     </div>
+ 
+                 </div>
+ 
+             </div>
+             
+             <!-- end of sub footer -->
+ 
+         </section>
+ 
+         <!-- end of newsletter section -->
+ 
+         <!-- footer -->
+ 
+         <footer>
+             <div class="text">Copyright ©️ 2022 Chain App Dev Company. All Rights Reserved.</div>
+             <div class="text">
+                 Design:<a target="_blank" href=""> TemplateMo</a>
+                 Developer: <a target="_blank" href="">Joel</a>
+             </div>
+         </footer>
+ 
+         <!-- footer end -->
+ 
+     </main>
+     <!-- END OF NEWSLETTER AND FOOTER SECTION -->
+ 
+     <!-- SCRIPT -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+     <script>
+// ON SCROLL STICKY HEADER
+
+
+$(window).scroll(function(){
+    var sticky = $('#header'),
+        scroll = $(window).scrollTop();
+  
+    if (scroll >= 250) sticky.addClass('sticky');
+    else sticky.removeClass('sticky');
+});
+
+
+$(window).scroll(function(){
+    var home = $('.home'),
+        services = $('.services'),
+        about = $('.about'),
+        pricing = $('.pricing'),
+        newsletter = $('.newsletter'),
+        scroll = $(window).scrollTop();
+  
+        var navLinks = [home, services, about, pricing, newsletter];
+  
+        scroll >= 0 && scroll <= 380 ? navLinks[0].addClass('border-bottom') : navLinks[0].removeClass('border-bottom');
+  
+        scroll >= 700 && scroll <= 1400 ? navLinks[1].addClass('border-bottom') : navLinks[1].removeClass('border-bottom');
+  
+        scroll >= 1500 && scroll <= 2200 ? navLinks[2].addClass('border-bottom') : navLinks[2].removeClass('border-bottom');
+  
+        scroll >= 3200 && scroll <= 4250 ? navLinks[3].addClass('border-bottom') : navLinks[3].removeClass('border-bottom');
+  
+        scroll >= 4320 ? navLinks[4].addClass('border-bottom') : navLinks[4].removeClass('border-bottom');
+  
+  });
+     </script>
+     
+ </body>
+ </html>

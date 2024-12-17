@@ -1,0 +1,93 @@
+/* imported fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* root styles */
+
+:root{
+    --primary: #ee626b;
+    --secondary: #f35525;
+    --tetiary: #4a4a4a;
+    --gradient: linear-gradient(105deg, rgba(91,104,235,1) 0%, rgba(40,225,253,1) 100%);
+    --text-color: #afafaf;
+    --uniform-width: 87.5%;
+}
+
+/* general styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    outline: none;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* text highlight background and color styles */
+
+::selection{
+    color: white;
+    background: var(--secondary);
+}
+
+/* GENERAL STYLES */
+
+/* layouts */
+
+/* grid layout */
+
+.grid-layout{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.span-6{
+    grid-column: span 6;
+}
+
+/* flex layout */
+
+.flex-layout{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* anchor tags */
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* texts */
+
+.text, p{
+    color: var(--tetiary);
+    font-weight: 400;
+    font-size: .87em;
+    line-height: 2;
+    letter-spacing: .5px;
+}
+
+.dark-orange{
+    color: var(--secondary);
+}
+
+.light-orange{
+    color: var(--primary);
+}

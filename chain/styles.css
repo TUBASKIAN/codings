@@ -1,0 +1,1767 @@
+    /* imported fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* root styles */
+
+:root{
+    --primary: #4b8ef1;
+    --secondary: #0d6dfd;
+    --tetiary: #2a2a2a;
+    --gradient: linear-gradient(105deg, rgba(91,104,235,1) 0%, rgba(40,225,253,1) 100%);
+    --text-color: #afafaf;
+    --uniform-width: 87.5%;
+}
+
+/* general styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    outline: none;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+  
+/* text highlight background and color styles */
+
+::selection{
+    color: white;
+    background: var(--primary);
+}
+
+/* GENERAL STYLES */
+
+/* layouts */
+
+/* grid layout */
+
+.grid-layout{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.span-6{
+    grid-column: span 6;
+}
+
+/* flex layout */
+
+.flex-layout{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* anchor tags */
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* texts */
+
+.text{
+    color: var(--text-color);
+    font-weight: 100;
+    font-size: .87em;
+    letter-spacing: .5px;
+    line-height: 2.1;
+}
+
+.dark-blue{
+    color: var(--primary);
+}
+
+.light-blue{
+    color: var(--secondary);
+}
+
+/* headers */
+
+h3, h4{
+    color: var(--tetiary);
+    letter-spacing: .3px;
+}
+
+h3{
+    font-size: 1.8em;
+    opacity: .9;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 3.05rem;
+    color: var(--tetiary);
+    line-height: 1.4;
+    letter-spacing: .5px;
+}
+
+/* radio and checkbox inputs */
+
+input[type='radio'],
+input[type='checkbox']{
+    display: none;
+}
+
+/* uniform width */
+
+.width{
+    width: var(--uniform-width);
+    margin: 0 auto;
+}
+
+/* centered text */
+
+.centered-text{
+    text-align: center;
+}
+
+.centered-text .text{
+    width: 39%;
+    margin: 0 auto;
+}
+
+/* lines */
+
+.lines{
+    width: 20%;
+    min-width: 100px;
+    height: 30px;
+    padding: 1.3em 0;
+}
+
+/* each line */
+
+.line{
+    width: 20px;
+    height: 2px;
+    background: var(--primary);
+}
+
+/* line spacing */
+
+.line:last-child{
+    margin-left: 6px;
+}
+
+/* centered texts lines */
+
+.centered-text .lines{
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/* images */
+
+img{
+    width: 100%;
+}
+
+/* buttons */
+
+button{
+    width: 125px;
+    padding: 0 20px;
+    height: 39px;
+    letter-spacing: .2px;
+    border-radius: 3em;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: lighter;
+    border: none;
+    background: var(--gradient);
+    color: white;
+    cursor: pointer;
+}
+/* HEADER AND NAVIGATION */
+
+header{
+    border-bottom: .5px solid rgba(0, 0, 0, 0.13);
+}
+
+/* header inner */
+
+header .header-inner{
+    justify-content: space-between;
+}
+
+/* header navigation */
+
+header nav{
+    width: 57%;
+}
+
+/* header unordered list */
+
+header ul{
+    justify-content: space-between;
+}
+
+/* header listed items */
+
+header li{
+    /* border: 1px solid; */
+    display: inline-block;
+    text-align: center;
+    padding: 1.9em 0;
+}
+
+/* header listed items spacing */
+
+header li:not(:last-child){
+    margin-right: 1.8em;
+}
+
+header li:nth-child(5){
+    margin-right: 0;
+}
+
+/* header anchor tags */
+
+header a{
+    text-transform: capitalize;
+    font-size: .9rem;
+    letter-spacing: .5px;
+    opacity: .9;
+}
+
+header .first-a{
+    color: var(--primary);
+}
+
+/* header button spacing */
+
+header nav label{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: 3em;
+    width: 129px;
+    padding: 0 20px;
+    line-height: 39px;
+    letter-spacing: .2px;
+    border-radius: 3em;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: lighter;
+    border: none;
+    background: var(--gradient);
+    color: white;
+    cursor: pointer;
+}
+
+/* on scroll header functions */
+
+.sticky{
+
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    transition: all .5s;
+    background: #fff;
+    box-shadow: 10px 0px 10px 3px rgba(255, 255, 255, .8);
+    height: 5em;
+    width: 100%;
+    z-index: 2;
+}
+
+.sticky li{
+    padding: 1.4em 0 1.6em 0;
+}
+
+.sticky li.border-bottom{
+    border-bottom: 1.5px solid var(--primary);
+    transition: all .3s;
+}
+
+.sticky li.border-bottom a{
+    color: var(--primary);
+    transition: all .3s;
+}
+
+.sticky .first-a{
+    color: initial;
+    transition: all .3s;
+}
+
+/* END OF HEADER */
+
+/* MODAL STYLES */
+
+/* modal section parent */
+
+aside#modal{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, .5);
+    height: 100%;
+    display: none;
+    animation: fade-in .4s;
+}
+
+/* modal animation effect */
+
+@keyframes fade-in{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+/* opening and closing of modal */
+
+#openModal:checked ~ aside#modal{
+    display: block;
+}
+
+/* modals container */
+
+aside#modal .modal-container{
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+/* each modal */
+
+aside#modal .modal{
+    width: 334px;
+    margin: 0 auto;
+    background: #fff;
+    display: none;
+}
+
+aside#modal .modal input[type='checkbox']{
+    display: inline-block;
+    padding: 2em;
+}
+
+/* navigation of modal tabs */
+
+#open-each-modal-01:checked ~ .initial-modal,
+#open-each-modal-02:checked ~ .login-modal,
+#open-each-modal-03:checked ~ .sign-up-modal{
+    display: block;
+}
+
+/* modal header */
+
+aside#modal .modal-head{
+    text-transform: uppercase;
+    padding: 7px 0 10px 1em;
+    border-bottom: 1px solid #ddd;
+    background: #F4F4F2;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+/* 'close modal' button */
+
+aside#modal .modal-head .close-modal{
+    position: absolute;
+    top: -1px;
+    right: 0;
+    width: 32px;
+    height: 20px;
+    border-radius: 0;
+    background: var(--primary);
+    cursor: pointer;
+}
+
+aside#modal .modal-head .close-modal .fas{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* modal body */
+
+aside#modal .modal-body{
+    width: 90%;
+    margin: 0 auto;
+    padding: .9em 0;
+}
+
+/* modal form buttons container */
+
+aside#modal .modal-buttons{
+    justify-content: space-between;
+}
+
+/* each modal button */
+
+aside#modal .modal-buttons label{
+    display: block;
+    background: var(--primary);
+    color: #fff;
+    letter-spacing: .3px;
+    font-weight: 500;
+    width: calc(96% / 2);
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 2.7;
+    transition: all .5s;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* each modal button hover effect */
+
+aside#modal .modal-buttons label:hover{
+    background: #f4f4f2;
+    color: initial;
+}
+
+/* initial modal connect links */
+
+aside#modal .connect{
+    padding: 1em 0 1em .5em;
+    background: #f4f4f2;
+    font-weight: 800;
+    opacity: .7;
+    letter-spacing: .5px;
+    cursor: pointer;
+}
+
+/* initial modal connect links hover effect */
+
+aside#modal .connect:hover{
+    background: #ddd;
+}
+
+/* initial modal connect links spacing */
+
+aside#modal .google{
+    margin-top: .6em;
+}
+
+/* initial modal email text */
+
+aside#modal .email{
+    padding: 1.4em 0;
+    text-align: center;
+    opacity: .5;
+}
+
+/* initial modal connect links social icons */
+
+aside#modal .connect .fab{
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+    color: #fff;
+}
+
+aside#modal .connect .fa-facebook-f{
+    background: #3B5998;
+}
+
+aside#modal .connect .fa-google{
+    background: #DD4B39;
+}
+/* modal input label-like paragraphs */
+
+aside#modal p{
+    opacity: .5;
+    letter-spacing: .3px;
+}
+
+/* modal inputs */
+
+aside#modal input[type='text'],
+aside#modal input[type='email'],
+aside#modal input[type='password']{
+    padding: 1em 0 1em .7em;
+    width: 89%;
+    display: block;
+    /* border-radius: 4px; */
+    border: .5px solid rgba(0, 0, 0, .2);
+    margin: .5em 0 1.7em 0;
+
+}
+
+/* modal input focus effect */
+
+aside#modal input[type='text']:focus,
+aside#modal input[type='email']:focus,
+aside#modal input[type='password']:focus{
+    outline: 1.5px solid #165fcc;
+}
+
+/* modal forgot password */
+
+aside#modal a.forgot-password{
+    padding-top: 1em;
+    padding-bottom: 1.2em;
+    display: block;
+    text-transform: capitalize;
+    color: var(--secondary);
+    font-weight: 300;
+    letter-spacing: .3px;
+}
+
+/* modal checkbox and label container */
+
+aside#modal .check{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: .7em;
+}
+
+/* hiding of the browser's default checkbox */
+
+aside#modal .check input[type='checkbox']{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* creating a custom checkbox */
+
+aside#modal .check .checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 23px;
+    border: .3px solid rgba(0, 0, 0, .3);
+}
+
+/* effect on custom checkbox checked state */
+
+aside#modal .check input:checked ~ .checkmark{
+    background: var(--primary);
+    border: none;
+}
+
+.checkmark::after{
+    content: '';
+    position: absolute;
+    display: none;
+    left: 9px;
+    top: 1px;
+    width: 8px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.check input:checked ~ .checkmark::after{
+    display: block;
+}
+
+.check .checkbox-label{
+    display: inline-block;
+    margin-left: 2em;
+    font-size: .9rem;
+    opacity: .5;
+}
+
+/* END OF MODAL STYLES */
+
+/* HOME SECTION */
+
+section#home{
+    padding: 8.9em 0 6em 0;
+    width: 79.5%;
+    margin: 0 auto;
+}
+
+/* home section grid container */
+
+section#home .home-inner{
+    column-gap: 1em;
+    padding-bottom: 3em;
+}
+
+/* home section grid left content */
+
+section#home .left{
+    margin-top: 3.3em;
+    
+}
+
+/* home section left grid paragraph text */
+
+section#home p{
+    margin-top: 1.5em;
+    font-size: 15px;
+    line-height: 2;
+    width: 95%;
+    font-weight: 100;
+    opacity: .9;
+}
+
+/* home section left grid buttons */
+
+section#home .buttons{
+    margin-top: 3em;
+}
+
+section#home .buttons button{
+    height: 43px !important;
+    background: #4b8ef1;
+}
+
+section#home .buttons button:last-child{
+    margin-left: 1em;
+}
+
+/* background image covering the header-navigation and home section */
+
+main#header-and-navigation{
+    background: url(https://i.postimg.cc/0yf8y194/slider-left-dec.png) top left no-repeat;
+    background-size: contain;
+    background-origin: border-box;
+}
+
+/* END OF HOME SECTION */
+
+/* SERVICES SECTION */
+
+section#services{
+    background: url(https://i.postimg.cc/3x78hxQp/services-left-dec.png) bottom left no-repeat;
+    background-size: 270px;
+    padding-bottom: 20em;
+}
+
+/* services centered text container */
+
+section#services .centered-text-container{
+    position: relative;
+    border: 1px solid #fff;
+}
+
+/* services centered text background-like image */
+
+section#services .centered-text-container > img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 88%;
+    margin-top: 0 !important;
+}
+
+/* services centered text */
+
+section#services .centered-text{
+    margin-top: 8em;
+}
+
+/* services features */
+
+section#services .features{
+    margin-top: 4em;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* each services feature */
+
+section#services .each-feature{
+    width: calc(94% / 4);
+    padding: 2em 1.7em;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.055),
+                -5px -5px 10px rgba(0, 0, 0, 0.055);
+    border-radius: .8em;
+    border-top-right-radius: 3em;
+    transition: background .2s;
+    background-color: #fff;
+}
+
+/* each feature background position effect on hover */
+
+section#services .each-feature:hover{
+    background: url(https://i.postimg.cc/sXxbzt25/service-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: top right; /* background position effect */
+}
+
+/* each feature spacing */
+
+section#services .each-feature:not(:first-child){
+    margin-left: calc(4% / 4);
+}
+
+/* each feature icon */
+
+section#services .icon{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: background .2s;
+}
+
+section#services .icon-01{
+    background-image: url(https://i.postimg.cc/YqFKhKz3/service-icon-01.png);
+}
+
+section#services .icon-02{
+    background-image: url(https://i.postimg.cc/4xTCcL8T/service-icon-02.png);
+}
+
+section#services .icon-03{
+    background-image: url(https://i.postimg.cc/L4Y6BWVq/service-icon-03.png);
+}
+
+section#services .icon-04{
+    background-image: url(https://i.postimg.cc/d0qzH7PH/service-icon-04.png);
+}
+
+/* hover effect on each feature */
+/* 
+section#services .each-feature:hover{
+
+} */
+
+/* hover effect on each feature icon*/
+
+section#services .each-feature:first-child:hover .icon-01{
+    background-image: url(https://i.postimg.cc/K876DPV3/service-icon-hover-01.png);
+}
+
+section#services .each-feature:nth-child(2):hover .icon-02{
+    background-image: url(https://i.postimg.cc/7Lmjpxqx/service-icon-hover-02.png);
+}
+
+section#services .each-feature:nth-child(3):hover .icon-03{
+    background-image: url(https://i.postimg.cc/ryByh9hf/service-icon-hover-03.png);
+}
+
+section#services .each-feature:nth-child(4):hover .icon-04{
+    background-image: url(https://i.postimg.cc/DZNHwBWH/service-icon-hover-04.png);
+}
+
+/* services features h4 */
+
+section#services h4{
+    font-weight: 900;
+    font-size: 1.1rem;
+    color: #000;
+    opacity: 1 !important;
+    margin-bottom: 1em;
+    transition: color .2s;
+}
+
+/* services features text */
+
+section#services .features .text{
+    font-size: .85rem;
+    margin-bottom: 1em;
+    transition: color .2s;
+}
+
+/* services features anchor tags */
+
+section#services a{
+    text-transform: capitalize;
+    color: var(--secondary);
+    font-size: .85rem;
+    transition: color .2s;
+}
+
+/* hover effect on each feature h4, text and anchor tags */
+
+section#services .each-feature:hover > h4,
+section#services .each-feature:hover > .text,
+section#services .each-feature:hover > a{
+    color: #fff;
+}
+
+/* END OF SERVICES SECTION */
+
+/* ABOUT SECTION */
+
+section#about{
+    position: relative;
+    top: -12em;
+}
+
+/* about section grid left content */
+
+section#about .left{
+    margin-top: 3.8em;
+}
+
+section#about .lines{
+    padding: 1.3em 0;
+}
+
+/* about content 2 by 2 grid layout on left content */
+
+section#about .about-body{
+    padding: 2.6em 0;
+    gap: 1.5em;
+}
+
+/* each content of 2 by 2 grid layout on left content */
+
+section#about .each-about-detail{
+    padding: 10px 1.9em;
+    border-radius: 3.3em;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.034),
+                -5px -5px 10px rgba(0, 0, 0, 0.034);
+    background: #fff;
+}
+
+section#about .each-about-detail:first-child{
+    margin-bottom: 2em;
+}
+
+section#about h4{
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+/* services section left content footer text */
+
+section#about .about-footer .text{
+    margin-bottom: 1.8em;
+}
+
+/* services section left content footer button */
+
+section#about button{
+    width: 13.3em;
+    height: 40px;
+}
+
+/* services section left content footer paragraph */
+
+section#about p{
+    font-size: .82rem;
+    margin-top: 1em;
+    font-weight: 100;
+    opacity: .3px;
+    letter-spacing: .2px;
+}
+
+/* about section background-ish image */
+
+section#about > img{
+    position: absolute;
+    bottom: -10em;
+    right: 0;
+    z-index: -1;
+    width: 62.3%;   
+}
+
+/* END OF ABOUT SECTION */
+
+/* REVIEWS */
+
+aside#reviews{
+    position: relative;
+    top: -5.4em;
+}
+
+/* reviews grid layout container */
+
+aside#reviews .clients{
+    margin-top: 5.2em;
+}
+
+/* reviews tab keys i.e clients info */
+
+aside#reviews .tab-keys{
+    grid-column: span 7;
+    padding-top: 3.5em;
+    padding-right: 9.5em;
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* each tab key spacing */
+
+aside#reviews .tab-key-details:not(:first-child){
+    margin-top: 2.5em;
+}
+
+/* each tab key */
+
+aside#reviews .tab-key-details{
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+/* each tab key name and date */
+
+aside#reviews .name-and-date{
+    width: 38%;
+}
+
+/* each tab key name */
+
+aside#reviews .name-and-date .name{
+    font-size: 1.2rem;
+    letter-spacing: .2px;
+    font-weight: 400;
+    color: var(--tetiary);
+}
+
+/* each tab key date */
+
+aside#reviews .name-and-date .date{
+    margin-top: .5em;
+    font-weight: 300;
+    font-size: .9rem;
+    letter-spacing: .1px;
+    opacity: .5;
+}
+
+/* each tab key industry and rating common styles */
+
+aside#reviews.industry,
+aside#reviews .rating{
+    font-size: .9rem;
+    opacity: .5;
+    line-height: 1.2;
+    letter-spacing: .2px;
+    font-weight: 550;
+    align-self: flex-start;
+}
+
+/* each tab key industry */
+
+aside#reviews .industry{
+    width: 10.5em;
+    align-self: stretch;
+    opacity: .4;
+}
+
+/* each tab key industry's third child targeteed with a class of 'b' */
+
+aside#reviews .industry.b{
+    align-self: stretch;
+    line-height: 1.8;
+}
+
+/* tab-key details checked and hover state effect on name and rating */
+
+aside#reviews .tab-key-details:hover .name,
+aside#reviews .tab-key-details:hover .rating,
+aside#reviews .tab-key-details:first-child .name,
+aside#reviews .tab-key-details:first-child .rating{
+    color: var(--primary);
+    opacity: 1 !important;
+}
+
+/* clients reviews */
+
+/* clients reviews container */
+
+aside#reviews .tab-content{
+    grid-column: span 5;
+    padding-left: .8em;
+}
+
+/* each client reviews */
+
+aside#reviews .each-tab-content{
+    display: none;
+    animation: slide-in .6s ease forwards;
+    position: relative;
+}
+
+/* slide in animation effect for each tab content */
+
+@keyframes slide-in{
+
+    0%{
+        left: 0;
+        opacity: 1 !important;
+    }
+
+    50%{
+        left: -100px;
+        opacity: 6 !important;
+    }
+
+    100%{
+        left: 0;
+        opacity: 1 !important;
+    }
+
+}
+
+/* reviews tab function */
+
+input#reviews-tab-01:checked ~ .david,
+input#reviews-tab-02:checked ~ .jake,
+input#reviews-tab-03:checked ~ .may,
+input#reviews-tab-04:checked ~ .user,
+input#reviews-tab-05:checked ~ .mark{
+    display: initial;
+}
+
+/* quoted reviews */
+
+aside#reviews .quote{
+    padding: 2.4em 2em 3em 1.8em;
+    height: 21em;
+    width: 100%;
+    border-radius: 3em;
+    background: url(https://i.postimg.cc/wjBvCBpv/client-bg.png) center no-repeat;
+    background-size: cover; 
+    object-fit: cover;
+    object-position: center;
+}
+
+/* quote iamge */
+
+aside#reviews .quote-image{
+    width: 78px;
+    height: 78px;
+    margin: 1em 0 1.5em 0;
+}
+
+/* quote text */
+
+aside#reviews .quote-text{
+    line-height: 1.85;
+    font-style: italic;
+    color: #fff;
+    font-weight: 100;
+}
+
+/* clients developer details witha flex layout */
+
+aside#reviews .developer-details{
+    margin-top: 2em;
+}
+
+/* clients developer image */
+
+aside#reviews .developer-image img{
+    border-radius: 100%;
+}
+
+/* clients developer name and position */
+
+aside#reviews .name-and-position{
+    margin-left: 1.8em;
+    line-height: 2.3;
+}
+
+/* clients developer h4 */
+
+aside#reviews .name-and-position h4{
+    font-size: 1.2rem;
+    font-weight: 700;
+    opacity: .9;
+}
+
+/* END OF CLIENTS REVIEWS */
+
+/* PRICING SECTION */
+
+/* centered text in pricing section header */
+
+section#pricing .centered-text{
+    margin-top: 3em;
+}
+
+/* pricing plans container */
+
+section#pricing .pricing-plans{
+    margin-top: 5em;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* each pricing plan */
+
+section#pricing .each-pricing-plan{
+    width: calc(95.5% / 3);
+    text-align: center;
+    padding: 2.6em 2.2em 6.2em 2.2em;
+    border-radius: 3.5em;
+    background: url(https://i.postimg.cc/1RJ4JFkT/regular-table-top.png) top left no-repeat, url(https://i.postimg.cc/9fZrpn2t/regular-table-bottom.png) bottom right no-repeat;
+    background-size: 270px, 380px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.048),
+                -5px -5px 8px rgba(0, 0, 0, 0.048);
+}
+
+/* pricing plan's special plan styles */
+
+.special-plan{
+    background: url(https://i.postimg.cc/C1nJmY1r/pro-table-top.png) top left no-repeat, url(https://i.postimg.cc/T1m7YGv5/pro-table-bottom.png) bottom right no-repeat !important;
+    /* padding-top: 6em !important;  */
+    padding-bottom: 7.5em !important;
+}
+
+.special-plan .price{
+    margin-bottom: 1em;
+}
+
+.special-plan .plan{
+    position: relative;
+    top: -.5em;
+}
+
+/* end of pricing plan's special plan styles */
+
+section#pricing .price{
+    text-align: left;
+    font-size: 2.3rem;
+    font-weight: 800;
+    letter-spacing: .7px;
+    color: #fff;
+}
+
+/* pricing plan's unavailable features */
+
+section#pricing .unavailable{
+    color: var(--text-color);
+    text-decoration: line-through;
+}
+
+/* pricing plan image */
+
+section#pricing .plan-img{
+    width: 122px;
+    margin: 0 auto;
+    margin-bottom: .8em;
+}
+
+/* pricing plan h4 */
+
+section#pricing h4{
+    font-size: 1.2rem;
+    line-height: 0;
+    padding: 1em 0 2.1em 0;
+}
+
+/* pricing plan unordered list i.e features */
+
+section#pricing ul{
+    font-size: .93rem;
+    font-weight: 400;
+    letter-spacing: .3px;
+    margin-bottom: 2.3em;
+    line-height: 2.5;
+}
+
+/* pricing plan purchase button */
+
+section#pricing button{
+    width: 75%;
+    margin: 0 auto;
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    transition: all .5s;
+    height: 2.9em;
+}
+
+/* pricing plan purchase button hover effect */
+
+section#pricing button:hover{
+    color: #fff;
+    background: #4b8ef1;
+}
+
+/* END OF PRICING SECTION */
+
+/* NEWSLETTER AND FOOTER SECTION */
+
+main#newsletter-and-footer{
+    margin-top: 7.5em;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+/* newsletter and footer background image */
+
+main#newsletter-and-footer > img{
+    position: absolute;
+    top: 0;
+    left: -18em;
+    width: 145%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* newsletter */
+
+section#newsletter{
+    margin-top: 18em;
+}
+
+/* newsletter centered text */
+
+section#newsletter .centered-text{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* newsletter centered text h3 */
+
+section#newsletter h3{
+    color: #fff;
+    font-weight: 550;
+    line-height: 1.5;
+    letter-spacing: .6px;
+}
+
+/* newsletter centered text form */
+
+section#newsletter form{
+    margin-top: 2.5em;
+    text-align: left;
+    justify-content: space-between;
+}
+
+/* newsletter centered text form input and submit button */
+
+section#newsletter form > *{
+    width: calc(96% / 2);
+    align-self: flex-end;
+    background: transparent;
+    color: #fff;
+}
+
+/* newsletter centered text form input */
+
+section#newsletter input[type='email']{
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 0 0 1em 5px;
+}
+
+/* newsletter centered text form input placeholder */
+
+::placeholder{
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: .5px;
+    font-weight: 300;
+}
+
+/* newsletter centered text form submit button */
+
+section#newsletter button{
+    border: 1px solid #fff;
+    height: 2.9em;
+    font-size: 1rem;
+    letter-spacing: .5px;
+    transition: all .5s;
+}
+
+/* newsletter centered text form submit button hover effect */
+
+section#newsletter button:hover{
+    color: var(--primary);
+    background: #fff;
+}
+
+/* newsletter sub footer */
+
+section#newsletter .sub-footer{
+    color: #fff;
+    margin-top: 4em;
+}
+
+/* newsletter sub footer columns container */
+
+section#newsletter .columns-parent{
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* each column in newsletter sub footer */
+
+section#newsletter .column{
+    width: calc(98% / 4);
+}
+
+/* each column in newsletter sub footer spacing */
+
+section#newsletter .column:not(:first-child){
+    margin-left: calc(2% / 4);
+}
+
+/* each column in newsletter sub footer h4 */
+
+section#newsletter .column h4{
+    color: #fff;
+    font-size: 1.2rem;
+    padding-bottom: 1.8em;
+}
+
+/* each column in newsletter sub footer text */
+
+section#newsletter .column .text{
+    color: #fff;
+    line-height: 3;
+    font-size: .8rem;
+    opacity: .8;
+}
+
+/* each column in newsletter sub footer unordered list */
+
+section#newsletter .sub-footer ul{
+    line-height: 2.5;
+    text-transform: capitalize;
+    font-size: .9rem;
+    opacity: .8;
+}
+
+/* each column in newsletter sub footer about column white logo */
+
+section#newsletter .about .white-logo{
+    width: 94px;
+    margin-bottom: 1.2em;
+}
+
+/* each column in newsletter sub footer about column text line height */
+
+section#newsletter .about .text{
+    line-height: 2.5;
+}
+
+/* end of newsletter styles */
+
+/* footer styles */
+
+footer{
+    padding: 4em 0;
+    text-align: center;
+    opacity: .8;
+}
+
+footer .text,
+footer a{
+    color: #fff;
+}
+
+/* END OF NEWSLETTER AND FOOTER STYLES */
+
+
+/************* MEDIA QUERIES *************/
+
+
+@media screen and (max-width: 1029px){
+    :root{
+        --uniform-width: 91%;
+    }
+
+    header li:not(:last-child) {
+        margin-right: 0;
+    }
+
+    header nav label{
+        margin-left: 1.2em;
+    }
+}
+
+
+@media screen and (max-width: 992px){
+    :root{
+        --uniform-width: 94.5%;
+    }
+
+    main#header-and-navigation {
+        background: initial;
+    }
+
+    section#home {
+        padding: 9em 0 6em 0;
+        width: 93%;
+        text-align: center;
+    }
+
+    section#home .left {
+        margin-top: 0;
+    }
+
+    section#home h2 {
+        width: 92%;
+    }
+
+    section#about .left {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    section#about .lines {
+        margin: 0 auto;
+        justify-content: center;
+    }
+    
+    section#about > img{
+        display: none;
+    }
+
+    section#about .each-about-detail {
+        padding: 13px 1.9em;
+        height: 6.5em;
+        border-radius: 2.2em;
+    }
+
+    section#about h4 {
+        font-size: 1.3rem;
+        line-height: 1.3;
+    }
+
+    aside#reviews .tab-keys{
+        padding-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 991px){
+    :root{
+        --uniform-width: 70%;
+    }
+
+    header nav {
+        width: 78%;
+    }
+
+    .span-6{
+        grid-column: span 12;
+    }
+
+    section#home h2 {
+        width: initial;
+    }
+
+    section#home {
+        width: var(--uniform-width);
+    }
+
+    section#home p {
+        font-size: 14px;
+        opacity: .5;
+    }
+
+    section#home .home-inner {
+        row-gap: 2em;
+    }
+
+    section#services .each-feature{
+        width: 100%;
+        text-align: center;
+    }
+
+    section#services .each-feature:not(:last-child){
+        margin-bottom: 2em;
+    }
+
+    section#services .icon{
+        margin: 0 auto;
+        margin-bottom: 2em;
+    }
+
+    section#services h4{
+        font-size: 1.2rem;
+    }
+
+    section#about .each-about-detail {
+        height: 5em;
+        border-radius: 3em;
+    }
+
+    section#about .about-body {
+        padding-top: 5em;
+        row-gap: 1.5em;
+    }
+
+    section#about .left {
+        margin-bottom: 2em;
+    }
+
+    section#about .about-footer .text {
+        text-align: left;
+    }
+
+    .centered-text .text {
+        width: 62%;
+        margin: 0 auto;
+    }
+
+    aside#reviews .tab-keys,
+    aside#reviews .tab-content{
+        grid-column: span 12;
+    }
+
+    aside#reviews .tab-keys {
+        padding-right: 9.5em;
+        padding-bottom: 2.5em;
+    }
+
+    aside#reviews .quote{
+        height: 19em;
+    }
+
+    section#pricing .each-pricing-plan {
+        width: 100%;
+    }
+
+    section#pricing .each-pricing-plan:not(:last-child) {
+        margin-bottom: 2em;
+    }
+
+    section#pricing button{
+        width: 35%;
+        min-width: 218.16px;
+    }
+
+    section#newsletter {
+        margin-top: 26em;
+    }
+
+    main#newsletter-and-footer > img {
+        left: -22em;
+        width: 200%;
+    }
+
+    section#newsletter .centered-text {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    section#newsletter .column {
+        width: 100%;
+    }
+    
+    section#newsletter .span-6{
+        grid-column: span 6;
+    }
+
+    section#newsletter .column .text {
+        line-height: 3;
+        font-size: .85rem;
+    }
+
+}
+
+@media screen and (max-width: 766px){
+
+    ul.flex-layout{
+        height: 0;
+        margin: 0;
+        opacity: 0;
+        width: 0;
+    }
+
+    header .logo{
+        padding: 2.1em 0 1.9em 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sticky .logo{
+        padding-bottom: 0;
+        padding-top: 1.2em;
+    }
+
+        .sticky ul.flex-layout{
+            top: 1em;
+        }
+
+    header .logo img{
+        width: 96px;
+    }
+
+    header nav{
+        width: 100%;
+        position: relative;
+    }
+
+    header .bars-container{
+        position: relative;
+        width: 2em;
+        height: 2em;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        right: -5em;
+    }
+
+    header .bars{
+        width: 100%;
+        height: 2px;
+        background: #000;
+        position: relative;
+        display: block;
+    }
+
+    header .bars::before,
+    header .bars::after{
+        height: 2px;
+        width: 75%;
+        content: '';
+        position: absolute;
+        display: block;
+        background: #000;
+        left: 0;
+    }
+
+    header .bars::before{
+        top: -10px;
+    }
+
+    header .bars::after{
+        top: 10px;
+    }
+
+    #dropdown:checked ~ ul.flex-layout{
+        display: block;
+        height: initial;
+        margin: initial;
+        width: initial;
+        opacity: 1;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 18.5em;
+        background: rgb(245, 242, 242);
+        transition: all .3s;
+        z-index: 2;
+    }
+
+    header li,
+    .sticky li{
+        display: block;
+        padding: .9em 0;
+        border-top: 1px solid #e7e7e7;
+    }
+
+    header li:last-child,
+    .sticky li:last-child{
+        border-bottom: 0;
+        width: 100%;
+        padding-top: 0;
+    }
+
+    header nav label {
+        margin-left: 0;
+        width: 100%;
+        line-height: 55px;
+        border-radius: 0;
+    }
+
+    header a{
+        font-size: 1rem;
+        display: block;
+    }
+
+    aside#reviews .tab-keys {
+        padding-right: 0;
+    }
+
+    aside#reviews .quote {
+        height: 20.5em;
+    }
+
+    section#newsletter .column {
+        text-align: center;
+    }
+
+    section#newsletter .span-6 {
+        grid-column: span 12;
+    }
+
+    section#newsletter .column h4 {
+        padding-bottom: 1em;
+        padding-top: 2.3em;
+    }
+
+    section#newsletter .column .text {
+        font-size: .9rem;
+    }
+
+    section#newsletter .about .white-logo {
+        margin: 1.1em auto;
+    }
+
+    section#newsletter {
+        margin-top: 35em;
+    }
+
+    main#newsletter-and-footer > img {
+        left: -30em;
+        width: 250%;
+    }
+    
+}
+
+@media screen and (max-width: 575px){
+    :root{
+        --uniform-width: 95%;
+    }
+
+    header .header-inner {
+        width: 84%;
+    }
+
+    header .bars-container {
+        right: 0;
+    }
+    
+    section#home p {
+        width: 100%;
+    }
+
+    aside#reviews .quote {
+        height: 25em;
+    }
+
+    section#newsletter form > * {
+        width: 100%;
+    }
+
+    section#newsletter button{
+        margin-top: 1em;
+    }
+
+    section#newsletter input[type='email'] {
+        border: 1px solid #fff;
+        padding: 1.5em 0 1.5em 2em;
+        height: 3.2em;
+        border-radius: 3em;
+    }
+}
